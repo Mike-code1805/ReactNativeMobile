@@ -19,7 +19,7 @@ function App(): JSX.Element {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
   const [selectedImage, setSelectedImage] = useState<any>()
-  const [base64, setbase64] = useState('')
+  const [base64] = useState('')
   
   const openImagePickerCrop = () => {
     ImagePicker.openCamera({
